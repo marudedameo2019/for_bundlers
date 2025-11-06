@@ -1,7 +1,7 @@
 set -ex
 npm init -y
 npm i -D @rspack/cli
-npm i open
+npm i open@10.2.0
 cat >index.mjs <<EOF
 import open from 'open';
 open('index.mjs', { wait: false }).then((child) => {
